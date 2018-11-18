@@ -1,0 +1,1 @@
+cmd_/vagrant/host-share/src/rk.ko.unsigned := ld -r -m elf_x86_64 -T /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/scripts/module-common.lds --build-id -o /vagrant/host-share/src/rk.ko.unsigned /vagrant/host-share/src/rk.o /vagrant/host-share/src/rk.mod.o 
