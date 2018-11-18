@@ -6,4 +6,5 @@
 *.cmd
 *.unsigned
 *.o
+*.mod.c
 
