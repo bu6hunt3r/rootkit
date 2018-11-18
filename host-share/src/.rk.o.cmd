@@ -490,6 +490,206 @@ deps_/vagrant/host-share/src/rk.o := \
   include/linux/rbtree.h \
   include/linux/selinux.h \
     $(wildcard include/config/security/selinux.h) \
+  include/linux/device.h \
+    $(wildcard include/config/debug/devres.h) \
+    $(wildcard include/config/devtmpfs.h) \
+  include/linux/klist.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/device.h \
+    $(wildcard include/config/dmar.h) \
+  include/linux/pm_wakeup.h \
+    $(wildcard include/config/pm.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/uaccess.h \
+    $(wildcard include/config/x86/wp/works/ok.h) \
+    $(wildcard include/config/x86/intel/usercopy.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/uaccess_64.h \
+  include/linux/syscalls.h \
+    $(wildcard include/config/event/profile.h) \
+    $(wildcard include/config/mips.h) \
+    $(wildcard include/config/have/syscall/wrappers.h) \
+  include/linux/aio_abi.h \
+  include/linux/sem.h \
+    $(wildcard include/config/sysvipc.h) \
+  include/linux/ipc.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/ipcbuf.h \
+  include/asm-generic/ipcbuf.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/sembuf.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/siginfo.h \
+  include/asm-generic/siginfo.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/signal.h \
+  include/asm-generic/signal-defs.h \
+  include/linux/unistd.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/unistd.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/unistd_64.h \
+  include/asm/asm-offsets.h \
+  include/trace/syscall.h \
+  include/linux/ftrace_event.h \
+  include/linux/ring_buffer.h \
+    $(wildcard include/config/ring/buffer/allow/swap.h) \
+  include/linux/kmemcheck.h \
+  include/linux/mm_types.h \
+    $(wildcard include/config/split/ptlock/cpus.h) \
+    $(wildcard include/config/want/page/debug/flags.h) \
+    $(wildcard include/config/mmu.h) \
+    $(wildcard include/config/aio.h) \
+    $(wildcard include/config/mm/owner.h) \
+    $(wildcard include/config/mmu/notifier.h) \
+  include/linux/auxvec.h \
+  include/linux/page-debug-flags.h \
+    $(wildcard include/config/page/poisoning.h) \
+    $(wildcard include/config/page/debug/something/else.h) \
+  include/linux/mm.h \
+    $(wildcard include/config/stack/growsup.h) \
+    $(wildcard include/config/ksm.h) \
+    $(wildcard include/config/swap.h) \
+    $(wildcard include/config/debug/pagealloc.h) \
+    $(wildcard include/config/hugetlbfs.h) \
+  include/linux/debug_locks.h \
+    $(wildcard include/config/debug/locking/api/selftests.h) \
+  include/linux/bit_spinlock.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/pgtable.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/pgtable_64.h \
+  include/linux/kaiser.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/kaiser.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/pgtable_64_types.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/mm_track.h \
+    $(wildcard include/config/track/dirty/pages.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/pgtable-invert.h \
+  include/asm-generic/pgtable.h \
+  include/linux/page-flags.h \
+    $(wildcard include/config/pageflags/extended.h) \
+    $(wildcard include/config/arch/uses/pg/uncached.h) \
+    $(wildcard include/config/memory/failure.h) \
+    $(wildcard include/config/s390.h) \
+  include/linux/huge_mm.h \
+  include/linux/vmstat.h \
+    $(wildcard include/config/vm/event/counters.h) \
+  include/linux/seq_file.h \
+  include/linux/trace_seq.h \
+  include/linux/hardirq.h \
+    $(wildcard include/config/virt/cpu/accounting.h) \
+  include/linux/ftrace_irq.h \
+    $(wildcard include/config/ftrace/nmi/enter.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/hardirq.h \
+    $(wildcard include/config/x86/mce.h) \
+    $(wildcard include/config/x86/mce/threshold.h) \
+  include/linux/irq.h \
+    $(wildcard include/config/irq/per/cpu.h) \
+    $(wildcard include/config/irq/release/method.h) \
+    $(wildcard include/config/intr/remap.h) \
+    $(wildcard include/config/generic/pending/irq.h) \
+    $(wildcard include/config/numa/irq/desc.h) \
+    $(wildcard include/config/generic/hardirqs/no//do/irq.h) \
+    $(wildcard include/config/cpumasks/offstack.h) \
+  include/linux/irqreturn.h \
+  include/linux/irqnr.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/irq.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/irq_regs.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/hw_irq.h \
+  include/linux/profile.h \
+    $(wildcard include/config/profiling.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/sections.h \
+    $(wildcard include/config/debug/rodata.h) \
+  include/asm-generic/sections.h \
+  include/linux/perf_event.h \
+    $(wildcard include/config/perf/events.h) \
+    $(wildcard include/config/have/hw/breakpoint.h) \
+    $(wildcard include/config/cgroup/perf.h) \
+  include/linux/cgroup.h \
+    $(wildcard include/config/cgroups.h) \
+  include/linux/sched.h \
+    $(wildcard include/config/sched/debug.h) \
+    $(wildcard include/config/lockup/detector.h) \
+    $(wildcard include/config/detect/hung/task.h) \
+    $(wildcard include/config/core/dump/default/elf/headers.h) \
+    $(wildcard include/config/bsd/process/acct.h) \
+    $(wildcard include/config/taskstats.h) \
+    $(wildcard include/config/audit.h) \
+    $(wildcard include/config/sched/autogroup.h) \
+    $(wildcard include/config/inotify/user.h) \
+    $(wildcard include/config/posix/mqueue.h) \
+    $(wildcard include/config/user/sched.h) \
+    $(wildcard include/config/schedstats.h) \
+    $(wildcard include/config/task/delay/acct.h) \
+    $(wildcard include/config/fair/group/sched.h) \
+    $(wildcard include/config/rt/group/sched.h) \
+    $(wildcard include/config/blk/dev/io/trace.h) \
+    $(wildcard include/config/utrace.h) \
+    $(wildcard include/config/rt/mutexes.h) \
+    $(wildcard include/config/task/xacct.h) \
+    $(wildcard include/config/cpusets.h) \
+    $(wildcard include/config/futex.h) \
+    $(wildcard include/config/fault/injection.h) \
+    $(wildcard include/config/latencytop.h) \
+    $(wildcard include/config/function/graph/tracer.h) \
+    $(wildcard include/config/have/unstable/sched/clock.h) \
+    $(wildcard include/config/cfs/bandwidth.h) \
+    $(wildcard include/config/group/sched.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/cputime.h \
+  include/asm-generic/cputime.h \
+  include/linux/signal.h \
+  include/linux/proportions.h \
+  include/linux/seccomp.h \
+    $(wildcard include/config/seccomp.h) \
+  include/linux/rtmutex.h \
+    $(wildcard include/config/debug/rt/mutexes.h) \
+  include/linux/plist.h \
+    $(wildcard include/config/debug/pi/list.h) \
+  include/linux/resource.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/resource.h \
+  include/asm-generic/resource.h \
+  include/linux/hrtimer.h \
+    $(wildcard include/config/high/res/timers.h) \
+    $(wildcard include/config/timerfd.h) \
+  include/linux/task_io_accounting.h \
+    $(wildcard include/config/task/io/accounting.h) \
+  include/linux/latencytop.h \
+  include/linux/percpu-rwsem.h \
+  include/linux/atomic.h \
+  include/linux/aio.h \
+  include/linux/uio.h \
+  include/linux/cgroupstats.h \
+  include/linux/taskstats.h \
+  include/linux/prio_heap.h \
+  include/linux/idr.h \
+  include/linux/cgroup_subsys.h \
+    $(wildcard include/config/cgroup/debug.h) \
+    $(wildcard include/config/cgroup/ns.h) \
+    $(wildcard include/config/cgroup/sched.h) \
+    $(wildcard include/config/cgroup/cpuacct.h) \
+    $(wildcard include/config/cgroup/device.h) \
+    $(wildcard include/config/cgroup/freezer.h) \
+    $(wildcard include/config/net/cls/cgroup.h) \
+    $(wildcard include/config/blk/cgroup.h) \
+    $(wildcard include/config/netprio/cgroup.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/perf_event.h \
+    $(wildcard include/config/cpu/sup/amd.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/stacktrace.h \
+    $(wildcard include/config/frame/pointer.h) \
+  include/linux/uaccess.h \
+  include/linux/ptrace.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/local64.h \
+  include/asm-generic/local64.h \
+  include/linux/pid_namespace.h \
+    $(wildcard include/config/pid/ns.h) \
+  include/linux/nsproxy.h \
+  include/linux/ftrace.h \
+    $(wildcard include/config/stack/tracer.h) \
+  include/linux/trace_clock.h \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/trace_clock.h \
+  include/linux/kallsyms.h \
+  include/linux/cpu.h \
+    $(wildcard include/config/arch/cpu/probe/release.h) \
+    $(wildcard include/config/pm/sleep/smp.h) \
+    $(wildcard include/config/hotplug/smt.h) \
+  include/linux/sysdev.h \
+  include/linux/node.h \
+    $(wildcard include/config/memory/hotplug/sparse.h) \
+  include/linux/irq_work.h \
+  include/linux/perf_regs.h \
+    $(wildcard include/config/have/perf/regs.h) \
+  /usr/src/kernels/2.6.32-754.6.3.el6.x86_64/arch/x86/include/asm/perf_regs.h \
+  include/linux/cdev.h \
+  include/linux/version.h \
 
 /vagrant/host-share/src/rk.o: $(deps_/vagrant/host-share/src/rk.o)
 
