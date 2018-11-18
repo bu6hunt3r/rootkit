@@ -1,5 +1,5 @@
 # Ignore tmp_versions
-./.tmp_versions/
+\.tmp_versions/
 
 *.order
 *.symvers
