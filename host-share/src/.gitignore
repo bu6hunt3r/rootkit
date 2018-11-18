@@ -1,0 +1,9 @@
+# Ignore tmp_versions
+./.tmp_versions/
+
+*.order
+*.symvers
+*.cmd
+*.unsigned
+*.o
+
