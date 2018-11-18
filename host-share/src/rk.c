@@ -13,18 +13,7 @@
 #include <linux/cred.h>
 #include <linux/version.h>
 
-#define DEBUG_ENABLED 1
-#define MAX_PIDS 512
-#define DEVICE_NAME "ttyR0"
-#define CLASS_NAME "ttyR"
-
-MODULE_LICENSE("Dual BSD/GPL");
-
-#if defined(DEBUG_ENABLED) && DEBUG_ENABLED == 1
-    # define DEBUG(...)		printk(KERN_INFO __VA_ARGS__)
-#else
-    # define DEBUG(...)
-#endif
+#include "rk.h"
 
 /*
 * STATIC VARIABLES SECTION
