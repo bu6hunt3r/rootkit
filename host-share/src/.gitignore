@@ -1,5 +1,5 @@
 # Ignore tmp_versions
-\.tmp_versions/
+.tmp_versions/
 
 *.order
 *.symvers
@@ -7,4 +7,8 @@
 *.unsigned
 *.o
 *.mod.c
+*.ko.cmd
+*.unsigned.cmd
+*.mod.o.cmd
+*.o.cmd
 
