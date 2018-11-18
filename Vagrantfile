@@ -11,12 +11,12 @@ Vagrant.configure("2") do |config|
     config.vm.define "centos-rootkit" do |centos|
       centos.vm.box = "bento/centos-6.10"
       centos.vm.hostname = "rootkit"
-      centos.vm.ssh.username = "vagrant"
-      centos.vm.ssh.password = "vagrant"
+      centos.ssh.username = "vagrant"
+      centos.ssh.password = "vagrant"
       centos.vm.provision "shell", inline: $provision_script
       centos.ssh.forward_agent = true
 
-      centos.vm.synced_folder "host-share", "/media/host-share", type: "rsync", disabled: false, rsync__verbose: true
+      centos.vm.synced_folder "host-share", "/media/host-share", type: "rsync", disabled: true, rsync__verbose: true
       centos.vm.network "public_network"
 
       centos.vm.provider "virtualbox" do |vb|
